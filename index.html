@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Order</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h1>Joe's Hotdog Stand</h1>
+        </div> <!-- End of Block -->
+    </div> <!-- End of container -->
+
+    <div class="container">
+        
+    </div> <!-- End of container -->
+
+    <script language="javascript" src="main.js"></script>
+
+    <!-- ORDER FORM STARTS HERE -->
+    <div class="container">
+        <form id="order-form" action="order.html" target="_blank" method="GET" onsubmit="return validate()">
+
+            <div class="order-field">
+                <div class="block">
+                    <h3>Place Your Order</h3>
+                </div> <!-- End of Block -->
+
+                <script language="javascript">
+                    var b = ""
+                    for (let i = 0; i < menu.length; i++) {
+                        b += makeMenuOption(menu[i].name.toLowerCase(), menu[i].name, menu[i].cost);
+                    }
+                    document.writeln(b);
+                </script>
+            </div>
+
+            <div id="btn">
+                <input type="submit" value="Submit">
+            </div> <!-- End of btn -->
+
+        </form> <!-- End of Order form -->
+    </div> <!-- End of container -->
+    <!-- END OF ORDER FORM -->
+</body>
+</html>

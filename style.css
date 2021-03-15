@@ -1,0 +1,96 @@
+*{padding:0; margin:0;}
+
+body{
+    background-color:rgb(165, 5, 5);
+    background-image: url("images/annie-spratt-XIpvd4QeV2w-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.block h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffff00;
+}
+
+.block h1, .block h3 {text-align: center;}
+.block, #order-form, #order-form input[type='submit']{margin:auto;}
+.block{padding: 20px;}
+
+#order-form {width: 20%;}
+#order-form .block{border-bottom: 1px dotted black;}
+#order-form input[type='submit']:hover{opacity: 0.60;}
+#order-form input[type='submit']{
+    background-color: none;
+    border-radius: 25px;
+    width: 50%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#order-form #btn{
+    display: flex;
+    margin-top: 20px;
+}
+
+.order-field{
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+select{
+    margin-right: 10px;
+    float: right;
+    font-size: 18px;
+}
+
+
+/* Style specific to receipt page */
+
+.block2{
+    max-width:15%; 
+    flex-grow:1; 
+    background-color:rgba(255, 255, 255, 0.40);
+}
+.block2 ul{list-style: none;}
+.block2 li{border-bottom: 1px #000000 dotted;}
+
+
+/* Align and Style receipt content */
+#food-qty, #total-display{padding-left:20%;}
+#food-cost, #actual-total{padding-right:20%;}
+#food-cost, #actual-total, #total-display {text-align: right;}
+#actual-total li:last-child, #total-display li:last-child{font-weight: bolder;}
+#food-qty, #food-cost{border-bottom: 1px solid #000;}
+
+
+
+/* On mobile: display to width of screen */
+@media(max-width:680px){
+    body{background-image: url("images/annie-spratt-XIpvd4QeV2w-unsplash-small.jpg"); background-repeat: repeat;}
+    .block2{max-width:none}
+    #order-form {width: 100%;}
+}
+
+
+/* Border outline of containers */
+/**************************************/
+/* body{border: 1px solid black;} */
+/* .container{border: 1px solid red;}
+.block{border: 1px solid blue;}
+#order-form{border: 1px solid green;}
+.order-field{border: 1px solid purple;} */
+
+/* 
+#food-qty{border: 1px solid black;}
+#food-cost{border: 1px solid purple;}
+#total-display{border: 1px solid blue;}
+#actual-total{border: 1px solid green;} */
+/**************************************/
